@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="success-container">
+        <h2>Thank You!</h2>
+        <p>Your message has been successfully sent. We will get back to you soon.</p>
+        <a href="index.html" class="back-button">Go Back to Home Page</a>
+    </div>
+
+   
+    <script>
+        
+        const formData = JSON.parse(localStorage.getItem('formData'));
+
+        if (formData) {
+            console.log("Submitted Data:", formData);
+            
+            // localStorage.removeItem('formData');
+        } else {
+            console.log("No data found.");
+        }
+    </script>
+
+</body>
+</html>
